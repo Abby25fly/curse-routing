@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+  background: #5fcf80; 
+  font-family: arial;
+  color: #576366;
+  font-family: 'Roboto', sans-serif;
+}
+
+.boardText {
+  background: white;
+  width: 700px;
+  margin: 70px auto;
+  border-radius: 15px;
+}
+
+h2{
+  font-weight: bold;
+  color: black;
+}
+menu ul{
+  margin: 0;
+  padding: 0;
+ }
+menu li {
+  display: inline-block;
+  padding: 16px;
+  color: black;
+  text-decoration: none;
+}
+menu li:hover {
+  background-color: #3b80d1;
+  color: white;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  box-sizing: border-box;
+  background-color: #edeff0;
+  color: black;
+  font-size: 20px;
+  width: 700px;
+  height: 60px;
+  margin: 0;
+  padding-top: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+menu {
+  display: inline-block;
+  background-color: #edeff0;
+  margin-top: 0;
+  align-content: left;
+  width: 88%;
+  text-align: right;
+  border-top-right-radius: 15px;
+  padding-right: 20px;
+}
+
+span{
+  display: block;
+  background-color: #54606b;
+  color: white;
+  width: 12%;
+  height: 60px;
+  margin: 0px;
+  padding-top: 0px;
+  text-align: center;
+  padding-top: 20px;
+  border-top-left-radius: 15px;
+}
+
+.main-content{
+  padding: 40px 30px;
+  background-color: white;
+}
+
+.teachers{
+  display: block;
+}
+.divPhoto{
+  display: list-item;
+  padding: 10px;
+}
+
+img{
+ width: 100%;
+ height: auto;
+}
+
+.course-nav {
+  display: flex;
+  margin: 1.5em 0 3.2em;
+  align-self: right;
+  text-decoration: none;
+}
+
+.courseBtn a{
+  background-color: #BDB9B9;
+  color: white;
+  padding: 3px 8px;
+  display: inline-block;
+  margin: 6px;
+  text-decoration: none;
+}
+.course-img {
+  width: 70px;
+}
+.container{
+  background-color: white;
+}
