@@ -94,30 +94,103 @@ class Repos extends Component {
 		switch (route) {
 
 			case 'css':
-				CurrentList = ['How to Make a CSS', 'HTML CSS'].map( (item, index) => {
-					return <li key = {index}> {item} </li>
+				CurrentList = [
+					<div className="row">
+					<div className="col-md-12">
+					<h3>CSS Basics</h3>
+					<p>
+					CSS (Cascading Style Sheets) is a style sheet language that describes the presentation of web pages. Whereas HTML is what forms the structure of a web page, CSS is what we use to style the HTML with colors, backgrounds, font sizes, layout, and more. As you'll soon learn, CSS is one of the core technologies for designing and building websites.
+					</p>
+					</div>
+					<div className="col-md-12">
+					<h3>CSS Selectors</h3>
+					<p>
+					In this course, we're going to go beyond the basic selector concepts covered in CSS Basics. Besides the common ways to select elements with type, ID and class selectors, we're able to target elements based on their attributes, position in the HTML document, even their relation to other elements.
+					</p>
+					</div>
+					<div className="col-md-12">
+					<h3>Responsive Layouts</h3>
+					<p>
+					Responsive web design is a collection of techniques for building websites that work on multiple screen sizes. In these lessons, we're going to use the foundational principles of responsive design as a framework for thinking about page layout. By the end, you should have a better understanding of how to approach common decisions in responsive design.
+					</p>
+					</div>
+					<div className="col-md-12">
+					<h3>CSS Flexbox Layout</h3>
+					<p>
+					Flexbox is a set of CSS properties that give you a flexible way to lay out content. With flexbox you can change the direction, alignment, size and order of elements, regardless of their original size and order in the HTML. You can even stretch and shrink elements and distribute space, all with just a few lines of CSS!
+					</p>
+					</div>
+				</div>
+				].map( (item, index) => {
+					return <div key = {index}> {item} </div>
 				});
 				break;
 			case 'javascript':
-				CurrentList = ['How to Make a JS', 'HTML JS'].map( (item, index) => {
+				CurrentList = [
+					<div className="row">
+					<div className="col-md-12">
+					<h3>JavaScript Basics</h3>
+					<p>
+					JavaScript is a programming language that drives the web: from front-end user interface design, to backend server-side programming, you'll find JavaScript at every stage of a web site and web application. In this course, you'll learn the fundamental programming concepts and syntax of the JavaScript programming language.
+					</p>
+					</div>
+					<div className="col-md-12">
+					<h3>JavaScript Loops, Arrays and Objects</h3>
+					<p>
+					Storing, tracking and handling data is a large part of computer programming. Arrays provide a method for storing multiple values into a single variable. That makes an array a convenient way to pass around a list of items.
+					</p>
+					</div>
+					<div className="col-md-12">
+					<h3>jQuery Basics</h3>
+					<p>
+					jQuery Basics covers why you'd want to use jQuery, what it is and how to include it in your projects. You'll build several projects over the course to give you the confidence to integrate jQuery in your own projects and add that level of flair and interactivity to any site you work on.
+					</p>
+					</div>
+					<div className="col-md-12">
+					<h3>AJAX Basics</h3>
+					<p>
+					AJAX is an important front-end web technology that lets JavaScript communicate with a web server. It lets you load new content without leaving the current page, creating a better, faster experience for your web site's visitors. In this course, you'll learn how AJAX works and how you can use JavaScript to communicate with a web server.
+					</p>
+					</div>
+				
+				</div>
+				].map( (item, index) => {
 					return <div  key = {index}> {item} </div>
 				});
 				break;
 			default: //'html'
 				CurrentList = [
-					<div className="divPhoto row">
-						<div className="col-md-6">
-						<img ClassName ="course-img" src="https://achievement-images.teamtreehouse.com/bagdes_html_howtobuildawebsite_stage02.png"/>
-						<h3>Json Babel</h3>
+					<div className="row">
+						<div className="col-md-12">
+						<h3>How to Make a Website</h3>
 						<p>
-				All of his professional life, Json has worked with computers online; 
-				he is a polyglot programmer and likes using the right tools for the job.</p>
-
+						If you’ve never built a website before and you have no coding or design experience, 
+						this is the place to start. In this project, we learn how to build a modern portfolio 
+						website for desktops, tablets, and mobile devices. We start with basic HTML and CSS syntax. Next,
+						we learn how to build custom web pages with an image gallery and contact page. Finally, we walk through how to share a website live on the web.</p>
 						</div>
+						<div className="col-md-12">
+						<h3>HTML Forms</h3>
+						<p>
+						The web is a two-way communication medium. There’s lots of HTML elements for displaying data and producing output, and conversely, there’s also lots of HTML elements for accepting input. Accepting input from the user means creating web forms. In this course, we’ll learn about all the most important form elements that web professionals use on a daily basis.</p>
+						</div>
+						<div className="col-md-12">
+						<h3>HTML Video and Audio</h3>
+						<p>
+						Text and images have always been the foundation of web content, but more than ever, video and audio are also a part of that content mix. Fortunately, we can now create standards-based video and audio players that don't require the use of plugins. Adding video and audio to a webpage is almost as easy as adding an image or formatting some text.
+						</p>
+						</div>
+						<div className="col-md-12">
+						<h3>SVG Basics</h3>
+						<p>
+						Scalable Vector Graphics (SVG) is an XML markup language for creating two-dimensional images using vectors. This is different from traditional raster-based image formats that use pixels, like JPEG and PNG. When used on web pages, SVG images provide an infinite level of detail, so they look sharp regardless of screen size or pixel density.
+						</p>
+						</div>
+					
 					</div>
 				
 			].map( (item, index) => {
-					return <div className="col-md-12" key = {index}> {item} </div>
+					return <div className="" key = {index}> {item} </div>
 				});
 				break;
 		}
